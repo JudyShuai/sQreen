@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.drawingfun.SignUpActivity"
+                android:background="@color/backgroudColor"
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textSize="30sp"
+            android:text= "Asian Legend 味香村"
+            android:layout_gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="470dp"
+                  android:orientation="vertical"
+                  android:gravity="center">
+    <EditText
+        android:id="@+id/usernameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Username"
+       >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/firstNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/firstNameField"
+        android:layout_alignLeft="@id/firstNameField"
+        android:hint="First Name"
+        />
+
+        <EditText
+            android:id="@+id/lastNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/lastNameField"
+            android:layout_alignLeft="@id/lastNameField"
+            android:hint="Last Name"
+            />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/emailField"
+        android:layout_alignLeft="@id/emailField"
+        android:hint="Email"
+        />
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/passwordText"
+            android:layout_alignLeft="@id/passwordText"
+            android:hint="Password"
+            />
+        <EditText
+            android:id="@+id/confirmPwText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/confirmPwText"
+            android:layout_alignLeft="@id/confirmPwText"
+            android:hint="Comfirm Password"
+            />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/emailField"
+        android:layout_alignLeft="@id/emailField"/>
+    </LinearLayout>
+
+</RelativeLayout>

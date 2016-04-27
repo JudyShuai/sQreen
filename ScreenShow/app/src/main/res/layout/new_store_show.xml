@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/new_store_show_layout"
+              android:background="#EEEEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="2dp"
+        android:background="@color/navigation_bar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/new_item_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/new_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/new_item_image"
+                android:textSize="30dp"
+                android:text= "Asian Legend 味香村"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:visibility="invisible">
+
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NEW"
+                android:textSize="17px"
+                android:id="@+id/new_buttonNew"
+            />
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SALE"
+                android:textSize="17px"
+                android:id="@+id/new_buttonSale"
+            />
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SPECIALS"
+                android:textSize="17px"
+                android:id="@+id/new_buttonSpecials"
+            />
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="INTRODUCTION"
+                android:textSize="17px"
+                android:id="@+id/new_buttonIntroduction"
+            />
+        <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PHOTOS"
+                android:textSize="17px"
+                android:id="@+id/new_buttonPhotos"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/new_listview"
+            android:layout_weight="2"
+            android:background="@drawable/round_frame"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <!--<ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/round_frame">-->
+
+            <com.somoplay.screenshow.customizedview.MyGridView
+                android:id="@+id/new_gridView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:columnWidth="300dp"
+                android:numColumns="auto_fit"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:background="@drawable/round_frame"
+                />
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/new_company_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/new_company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text= "© 2015 sQreen | All Rights Reserved."
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

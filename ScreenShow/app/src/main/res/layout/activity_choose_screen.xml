@@ -1,0 +1,50 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:orientation="vertical"
+                tools:context="com.somoplay.screenshow.activity.ChooseScreenActivity"
+                android:background="#EEEEEE"
+
+               
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/navigation_bar">
+        <!--<ImageView
+            android:id="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:visibility="gone"
+            android:layout_gravity="center">
+        </ImageView>-->
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text= "sQreen"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A096A2">
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/showListView"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:layout_alignParentTop="true"/>
+</LinearLayout>

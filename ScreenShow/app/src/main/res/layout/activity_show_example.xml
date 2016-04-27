@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+              android:id="@+id/backgroundLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@color/navigation_bar">
+        <TextView
+            android:text="Show Examples"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A096A2">
+    </LinearLayout>
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/restaurant"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Restaurant"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/building"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant"
+        android:text="Building"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/advertisement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/building"
+        android:text="Advertisement"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/photoShow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/advertisement"
+        android:text="Photo Show"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="#00ffffff"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

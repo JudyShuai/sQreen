@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             xmlns:marquee="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/videoWindow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/imageviewActressPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/actressImage"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/marqueeView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <com.somoplay.screenshow.customizedview.LYMarqueeViewThree
+            android:id="@+id/subtitleView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            marquee:speed="10"
+            marquee:pause="0"
+            marquee:autoStart="true">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                tools:ignore="HardcodedText"/>
+        </com.somoplay.screenshow.customizedview.LYMarqueeViewThree>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="3"/>
+
+        <com.somoplay.screenshow.customizedview.LYMarqueeViewThree
+            android:id="@+id/subtitleView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            marquee:speed="10"
+            marquee:pause="0"
+            marquee:autoStart="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="center"/>
+        </com.somoplay.screenshow.customizedview.LYMarqueeViewThree>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="3"/>
+
+        <com.somoplay.screenshow.customizedview.LYMarqueeViewThree
+            android:id="@+id/subtitleView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            marquee:speed="10"
+            marquee:pause="0"
+            marquee:autoStart="true">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="bottom"/>
+        </com.somoplay.screenshow.customizedview.LYMarqueeViewThree>
+
+    </LinearLayout>
+
+</FrameLayout>

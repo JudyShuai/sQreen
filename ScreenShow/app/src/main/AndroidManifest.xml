@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.somoplay.screenshow" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+
+    </application>
+    -->
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        <activity
+            android:name=".activity.new_StoreShowActivity"
+            android:label="sQreen">
+        </activity>
+        <activity
+            android:name=".Useless.StoreShowActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".activity.AboutActivity"
+                  android:label="sQreen"/>
+        <activity
+            android:name=".Useless.SettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ChooseScreenActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.OfficeShowActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.MediaShowActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.CommonItemDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.CarAndHouseDetailActivity">
+        </activity>
+        <activity
+            android:name=".activity.DishDetailActivity">
+        </activity>
+        <activity
+            android:name=".activity.OfficeDetailActivity">
+        </activity>
+        <activity
+            android:name=".activity.ShowExampleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.DownloadActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.CommonShowActivity">
+        </activity>
+        <activity
+            android:name=".activity.RestaurantShowActivity">
+        </activity>
+        <activity
+            android:name=".activity.StoreIntroductionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Useless.SignUpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.ShowScreenInfoAcrivity"
+            android:label="@string/title_activity_show_screen_info_acrivity" >
+        </activity>
+        <!-- startup page -->
+        <activity
+            android:name=".activity.StartLoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MediaListRequestService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name=".app.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".app.ConnectivityReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.CarAndHouseActivity"
+            android:label="@string/title_activity_car_and_house" >
+        </activity>
+    </application>
+
+</manifest>

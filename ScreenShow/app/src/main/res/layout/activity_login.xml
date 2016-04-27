@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/loginLayOutBackground"
+                android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/navigation_bar">
+
+        <!--<ImageView
+            android:id="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:visibility="gone"
+            android:layout_gravity="center">
+        </ImageView>-->
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:paddingBottom="5dp"
+            android:text= "sQreen"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textView"/>
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:hint="Email/User Name"
+            android:text="luyao_viva@hotmail.com">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/firstNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignLeft="@id/usernameField"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/usernameField"
+            android:hint="Password"
+            android:text="111"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button style="@style/buttonStyle"
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@+id/firstNameField"
+            android:layout_alignLeft="@id/firstNameField"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/signUpText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sign Up"-->
+        <!--android:layout_below="@+id/loginButton"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="49dp"/>-->
+        <Button
+            android:id="@+id/settingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:visibility="gone"
+            android:layout_below="@+id/loginButton"
+            android:layout_alignLeft="@id/firstNameField"
+            />
+        <Button
+            style="@style/buttonStyle"
+            android:id="@+id/goToShowExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Test Page"
+            android:layout_below="@+id/settingText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <Button
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about"
+            android:text="Powered by Somoplay Inc."
+            android:layout_below="@+id/goToShowExample"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <!--<ProgressBar-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/loginProgressBar"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:visibility="invisible"/>-->
+    </LinearLayout>
+  <!--  <Button android:id="@+id/goToStoreShow_button" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Go to StoreShow"
+            android:layout_below="@+id/linearLayout" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <Button android:id="@+id/goToMediaShow_button" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Go to MediaShow"
+            android:layout_below="@+id/goToStoreShow_button" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <Button android:id="@+id/goToDownloadDataButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Go to Download Data"
+            android:layout_below="@+id/goToMediaShow_button"
+            android:layout_centerHorizontal="true"/>-->
+
+</RelativeLayout>

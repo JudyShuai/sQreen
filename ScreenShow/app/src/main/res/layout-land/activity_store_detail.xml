@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreItemDetailActivity"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+              android:id="@+id/common_item_detail_activity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="2dp"
+        android:background="@color/navigation_bar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/item_image"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:text= "Asian Legend 味香村"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:layout_weight="15"
+        android:padding="10dp"
+        android:orientation="horizontal">
+       <!-- <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_frame"
+            >
+            <ImageView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:id="@+id/flipperImageView"
+                />
+        </ViewFlipper>-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_frame"
+            android:layout_gravity="center"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_gravity="bottom"
+                android:background="#33000000"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_dot_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="1dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_frame">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/navigation_bar"/>
+            <!--<LinearLayout android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:orientation="vertical"-->
+                <!-->-->
+                <TextView
+                    android:id="@+id/store_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price: $"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:id="@+id/store_item_onSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale: $"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:id="@+id/store_item_expiration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiration: "
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/store_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="15sp"
+                android:text="Content: "
+                android:textColor="#000000"
+                android:layout_weight="8"/>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center">
+        </ImageView>
+        <TextView
+            android:id="@+id/company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text= "© 2015 sQreen | All Rights Reserved."
+            android:layout_gravity="center">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

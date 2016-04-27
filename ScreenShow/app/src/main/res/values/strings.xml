@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sQreen</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Bollywood Actress</string>
+    <string name="namePriyankaChopra">Priyanka Chopra</string>
+    <string name="nameKareenaKapoor">Kareena Kapoor</string>
+    <string name="nameSonakshiSinha">Sonakshi Sinha</string><color name="mainMenuTextColor">#FFFFFF</color><color name="bgColorMainMenu">#FF408C</color>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="actressImage">Actress Image</string>
+    <color name="navigationButtonTextColor">#70C656</color>
+    <string name="title_activity_choose_screen">ChooseScreenActivity</string>
+    <string name="dish_lastupdated_ts">Settings</string>
+    <string name="title_activity_show_screen_info_acrivity">ShowScreenInfoAcrivity</string>
+    <string name="title_activity_car_and_house">Car and House</string>
+
+
+</resources>

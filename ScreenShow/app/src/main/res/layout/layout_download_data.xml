@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#EEEEEE"
+    >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@color/navigation_bar"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+            android:text="Download For "
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/screeNameText"
+            android:paddingRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingBottom="60dp"
+            android:background="#A096A2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Screen Detail"
+        android:id="@+id/detail_button"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Download All"
+        android:id="@+id/download_button"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:id="@+id/update_button"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    <!--<Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:id="@+id/setting_button"
+        />-->
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/enter_button"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:gravity="right"-->
+        <!--android:textSize="18dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:id="@+id/showScreenInfoBtn"-->
+        <!--android:text="Show Screen Info->"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/download_Percent"/>
+
+        <ProgressBar android:id="@+id/progress_bar"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     style="?android:attr/progressBarStyleHorizontal"/>
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar"-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="#00ffffff"-->
+        <!--android:indeterminate="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:visibility="gone"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>
